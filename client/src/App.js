@@ -15,14 +15,14 @@ function App() {
         <Route path='/' element={<Landing />} />
         {/* Unauthorised Route */}
         {!isLoggedIn && <>
-          <Route path='/login' element={<Login />} />
-          <Route path='/signup' element={<Signup />} />
+          <Route path='api/v1/login' element={<Login />} />
+          <Route path='api/v1/signup' element={<Signup />} />
         </>
         }
         {/* ProtectedRoute Put Here */}
         <Route>
-          <Route path='/login' element={<Login />} />
-          <Route path='/signup' element={<Signup />} />
+          <Route path='api/v1/login' element={<Login />} />
+          <Route path='api/v1/signup' element={<Signup />} />
           {userType !== 'admin' ?
             (<></>) :
             (<></>)}

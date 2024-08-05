@@ -5,7 +5,7 @@ const Signup = () => {
     return (
         <div className='NinetyVh homebg overflow-y-scroll py-8'>
             <div className='flex items-center justify-center md:h-full'>
-                <div className='bg-white w-10/12 md:w-4/12 mx-auto rounded-md drop-shadow-md px-4 py-4 md:px-10 md:py-10'>
+                <div className='bg-white w-10/12 md:w-4/12 mx-auto rounded-md drop-shadow-md px-4 py-4 md:px-10 md:py-10 opacity-80'>
                     <div className='md:px-10'>
                         <p className='font-extrabold text-sky-700 text-4xl'>Register</p>
                         <p className='py-2 text-lg font-extralight'>Already have an account?<Link to='/login'><span className='text-sky-600'> Login here</span></Link></p>
