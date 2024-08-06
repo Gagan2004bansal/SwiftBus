@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from "react-toastify";
 import axios from 'axios';
-import { LOGIN_URL } from '../apis/Api';
+
 
 const Login = () => {
+
+    const LOGIN_URL = "http://localhost:3000/api/v1/login";
 
     const [info, setInfo] = useState({
         email: "",
@@ -46,7 +48,7 @@ const Login = () => {
                 <div className='bg-white w-10/12 md:w-4/12 mx-auto rounded-md drop-shadow-md px-4 py-4 md:px-10 md:py-10 opacity-80'>
                     <div className='md:px-10'>
                         <p className='font-extrabold text-sky-700 text-4xl'>Login</p>
-                        <p className='py-2 text-lg font-extralight'>Don't have an Account?<Link to='/signup'><span className='text-sky-600'> Create your account</span></Link>, it takes less than a minute</p>
+                        <p className='py-2 text-lg font-extralight'>Don't have an Account?<Link to='/api/v1/signup'><span className='text-sky-600'> Create your account</span></Link>, it takes less than a minute</p>
                     </div>
                     <div className='md:px-10'>
                         <form onSubmit={submitHandler} >
